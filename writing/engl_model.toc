@@ -1,0 +1,7 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Published work}{2}
+\contentsline {subsection}{\numberline {2.1}Early work}{2}
+\contentsline {subsection}{\numberline {2.2}Advance in aggregation method}{3}
+\contentsline {subsection}{\numberline {2.3}Recent work}{3}
+\contentsline {section}{\numberline {3}Conclusion}{5}
