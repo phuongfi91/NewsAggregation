@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - Europe]]></title>
+        <description><![CDATA[BBC News - Europe]]></description>
+        <link>http://www.bbc.co.uk/news/</link>
+        <image>
+            <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - Europe</title>
+            <link>http://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 06 Oct 2017 07:52:16 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Catalan police chief in Madrid court in 'sedition' probe]]></title>
+            <description><![CDATA[Spanish authorities suspect Catalonia's Mossos regional police of aiding separatists.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41523250</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41523250</guid>
+            <pubDate>Fri, 06 Oct 2017 07:48:49 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/F146/production/_98166716_traperonewepa31aug17.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Bus crash at railway crossing kills 19 in Russia]]></title>
+            <description><![CDATA[About 55 bus passengers were reported to be sleeping on board when it stalled on a crossing.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41522748</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41522748</guid>
+            <pubDate>Fri, 06 Oct 2017 07:12:20 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/16162/production/_98166409_epa2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Afghan refugee, 106, ‘happy’ at Sweden asylum U-turn]]></title>
+            <description><![CDATA[A 106-year-old Afghan woman says she is "happy" a Swedish court overturned a decision to deport her.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41515521</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41515521</guid>
+            <pubDate>Thu, 05 Oct 2017 17:41:30 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/7C16/production/_98166713_mediaitem98161214.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Russian soldiers face ban on selfies and blog posts]]></title>
+            <description><![CDATA[The security crackdown follows revealing posts from soldiers in Ukraine and Syria.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41510592</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41510592</guid>
+            <pubDate>Thu, 05 Oct 2017 15:41:55 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/61AD/production/_98150052_russoldierpicgorigetty22aug08.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['German James Bond' Werner Mauss sentenced for tax evasion]]></title>
+            <description><![CDATA[Werner Mauss, one of Germany's top former spies, failed to pay millions of euros of taxes.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41512754</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41512754</guid>
+            <pubDate>Thu, 05 Oct 2017 12:35:33 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/130FE/production/_91387087_mediaitem91387085.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Saudi king signs lucrative deals on landmark Russia visit]]></title>
+            <description><![CDATA[The first official visit to Russia by a Saudi monarch is studded with arms and energy deals.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41512759</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41512759</guid>
+            <pubDate>Thu, 05 Oct 2017 14:47:00 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/80A7/production/_98153923_mediaitem98153922.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Plan for a very hard Brexit, German firms told]]></title>
+            <description><![CDATA[It would be naive for German firms with a UK presence to do otherwise, says Germany's top industry body.]]></description>
+            <link>http://www.bbc.co.uk/news/business-41509198</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/business-41509198</guid>
+            <pubDate>Thu, 05 Oct 2017 16:48:20 GMT</pubDate>
+            <media:thumbnail width="768" height="432" url="http://c.files.bbci.co.uk/AFC3/production/_98159944_rxpbdf1k.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Air France engine debris found in Greenland]]></title>
+            <description><![CDATA[One of the engines failed and parts fell off during an Air France transatlantic flight on Saturday.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41515516</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41515516</guid>
+            <pubDate>Thu, 05 Oct 2017 16:33:14 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/AA7E/production/_98164634_22046146_1584623314916873_3392699967052268143_n.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Athenia: Is this the wreck of the first British ship torpedoed in WW2?]]></title>
+            <description><![CDATA[The remains of a passenger liner torpedoed by a U-boat just hours into the war may have been found.]]></description>
+            <link>http://www.bbc.co.uk/news/science-environment-41503664</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/science-environment-41503664</guid>
+            <pubDate>Wed, 04 Oct 2017 23:13:54 GMT</pubDate>
+            <media:thumbnail width="624" height="351" url="http://c.files.bbci.co.uk/C188/production/_98144594_athenia-2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Cesare Battisti: Brazil holds fugitive Italian ex-militant]]></title>
+            <description><![CDATA[Cesare Battisti was convicted in absentia of four murders committed during the 1970s.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41510590</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41510590</guid>
+            <pubDate>Thu, 05 Oct 2017 09:13:43 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12115/production/_98150047_batreut13mar15.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[100 Women: Where are the female Nobel Prize winners?]]></title>
+            <description><![CDATA[The 2017 Nobel prizes for the sciences have all been announced, but many in the scientific community are pointing out the lack of female laureates.]]></description>
+            <link>http://www.bbc.co.uk/news/science-environment-41513261</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/science-environment-41513261</guid>
+            <pubDate>Thu, 05 Oct 2017 11:22:27 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/183B7/production/_98155299_nobel.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Kazuo Ishiguro: Nobel Literature Prize is 'a magnificent honour']]></title>
+            <description><![CDATA[The British writer is known for novels including The Remains of the Day and Never Let Me Go.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-41513246</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-41513246</guid>
+            <pubDate>Thu, 05 Oct 2017 16:47:25 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/B2E3/production/_98159754_kazuoishiguroafterwinning_epa.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Vladimir Putin in Armenia]]></title>
+            <description><![CDATA[In this playground, the Russian president is a bit of a local attraction.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41506512</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41506512</guid>
+            <pubDate>Thu, 05 Oct 2017 07:58:40 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/143B0/production/_98146828_p05j26nn.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Catalonia referendum: Puigdemont will declare independence 'in matter of days']]></title>
+            <description><![CDATA[Catalonia will declare independence from Spain in a matter of days, the leader of the autonomous region has told the BBC.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41494090</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41494090</guid>
+            <pubDate>Wed, 04 Oct 2017 02:33:01 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/14387/production/_98132828_p05hzy3n.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Catalan vote: What will happen next?]]></title>
+            <description><![CDATA[The BBC's Tom Burridge on how the crisis in Spain is likely to unfold.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41493322</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41493322</guid>
+            <pubDate>Tue, 03 Oct 2017 22:10:45 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/307D/production/_98131421_p05hzm0w.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[A day of Catalan protests in Barcelona]]></title>
+            <description><![CDATA[Firefighters joined the crowds in solidarity while Spanish police look on.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41491444</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41491444</guid>
+            <pubDate>Tue, 03 Oct 2017 16:24:51 GMT</pubDate>
+            <media:thumbnail width="1024" height="576" url="http://c.files.bbci.co.uk/15876/production/_98128188_p05hyx25.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Split view]]></title>
+            <description><![CDATA[TV and newspaper coverage of the political crisis gripping Spain reflects differing views of events, the BBC's Guy Hedgecoe writes.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41517569</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41517569</guid>
+            <pubDate>Fri, 06 Oct 2017 00:00:25 GMT</pubDate>
+            <media:thumbnail width="2048" height="1152" url="http://c.files.bbci.co.uk/1780/production/_98161060_042177485.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Trolls target]]></title>
+            <description><![CDATA[An investigative journalist's reporting turned her into the target of trolls in a harassment campaign that has continued for years.]]></description>
+            <link>http://www.bbc.co.uk/news/blogs-trending-41499789</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/blogs-trending-41499789</guid>
+            <pubDate>Fri, 06 Oct 2017 00:02:49 GMT</pubDate>
+            <media:thumbnail width="624" height="351" url="http://c.files.bbci.co.uk/129C1/production/_98152267_aro2.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['A daily life issue']]></title>
+            <description><![CDATA[Student Noa Jansma takes selfies and posts them on Instagram with any man who harasses her in the street.]]></description>
+            <link>http://www.bbc.co.uk/newsbeat/articles/41511357</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/newsbeat/articles/41511357</guid>
+            <pubDate>Thu, 05 Oct 2017 15:24:04 GMT</pubDate>
+            <media:thumbnail width="817" height="460" url="http://c.files.bbci.co.uk/16CE7/production/_98151439_instagram1.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Rebel without a state]]></title>
+            <description><![CDATA[Catalonia's President Carles Puigdemont is betting everything on a split from Spain.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41508660</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41508660</guid>
+            <pubDate>Thu, 05 Oct 2017 09:08:34 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/3A2E/production/_98149841_mediaitem98149840.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Adult playground]]></title>
+            <description><![CDATA[Take a peek at the latest installation to fill the Tate Modern's Turbine Hall.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-41471911</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-41471911</guid>
+            <pubDate>Mon, 02 Oct 2017 16:06:42 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/A3C1/production/_98112914_swing_getty.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Reality Check]]></title>
+            <description><![CDATA[As Catalonia's leader threatens to declare independence, we ask whether the region could stand on its own two feet.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41474674</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41474674</guid>
+            <pubDate>Wed, 04 Oct 2017 01:20:36 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12FA3/production/_98113777_gettyimages-845631440.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Divided loyalties ]]></title>
+            <description><![CDATA[The sight of Spanish police beating voters in Catalonia will not be forgotten, says the BBC's Patrick Jackson.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41486358</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41486358</guid>
+            <pubDate>Tue, 03 Oct 2017 14:40:50 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/12590/production/_98125157_mediaitem98125156.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[In pictures]]></title>
+            <description><![CDATA[Stars including Dame Helen Mirren and Cheryl Tweedy have been grabbing attention at the spring/summer shows.]]></description>
+            <link>http://www.bbc.co.uk/news/entertainment-arts-41470704</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/entertainment-arts-41470704</guid>
+            <pubDate>Wed, 04 Oct 2017 12:00:16 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/18256/production/_98120989_cheryl_composite_afp.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Fractured nation]]></title>
+            <description><![CDATA[Catalonia has plunged Spain into its biggest crisis since a 1981 coup attempt, writes James Badcock.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41466619</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41466619</guid>
+            <pubDate>Mon, 02 Oct 2017 23:15:18 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/2AE4/production/_98108901_catsjuliaderamis1octgettyok.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Anger as German ex-chancellor Schroeder heads up Rosneft board]]></title>
+            <description><![CDATA[The German former chancellor is now chairman of a state-controlled Russian oil giant.]]></description>
+            <link>http://www.bbc.co.uk/news/world-europe-41447603</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/world-europe-41447603</guid>
+            <pubDate>Fri, 29 Sep 2017 16:06:35 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/13625/production/_98079397_gettyimages-855510982.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Volkswagen diesel emissions fixing bill hits $30bn]]></title>
+            <description><![CDATA[Another $3bn is added to VW's bill for fixing vehicles in the US ratcheting up the total.]]></description>
+            <link>http://www.bbc.co.uk/news/business-41442834</link>
+            <guid isPermaLink="true">http://www.bbc.co.uk/news/business-41442834</guid>
+            <pubDate>Fri, 29 Sep 2017 14:23:44 GMT</pubDate>
+            <media:thumbnail width="976" height="549" url="http://c.files.bbci.co.uk/49E0/production/_93321981_no8p0z90.jpg"/>
+        </item>
+    </channel>
+</rss>
