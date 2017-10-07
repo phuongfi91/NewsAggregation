@@ -1,7 +1,7 @@
 # NewsAggregation
 
 ## Team members
-1. Rula Alhalaseh
+1. Rola Alhalaseh
 2. Quan Duong
 3. Phuong Nguyen
 
