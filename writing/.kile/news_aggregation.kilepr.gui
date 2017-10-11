@@ -56,7 +56,7 @@ open=false
 order=-1
 
 [item:references.bib]
-open=false
+open=true
 order=1
 
 [item:tktl.bst]
@@ -68,8 +68,8 @@ open=false
 order=-1
 
 [view-settings,view=0,item:engl_model.tex]
-CursorColumn=1
-CursorLine=96
+CursorColumn=404
+CursorLine=37
 JumpList=
 TextFolding=[]
 ViMarks=.,0,0,[,0,0,],0,0
@@ -82,8 +82,8 @@ TextFolding=[]
 ViMarks=.,0,0,[,0,0,],-1,-1
 
 [view-settings,view=0,item:references.bib]
-CursorColumn=0
-CursorLine=0
+CursorColumn=57
+CursorLine=8
 JumpList=
 TextFolding=[]
 ViMarks=
