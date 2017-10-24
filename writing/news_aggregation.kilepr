@@ -62,6 +62,6 @@ mode=
 
 [item:tktltiki.cls]
 archive=true
-encoding=
-highlight=
-mode=
+encoding=ISO-8859-15
+highlight=LaTeX
+mode=LaTeX

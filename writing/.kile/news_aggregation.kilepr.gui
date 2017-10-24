@@ -31,6 +31,15 @@ Indentation Mode=normal
 Mode=BibTeX
 Mode Set By User=false
 
+[document-settings,item:tktltiki.cls]
+Bookmarks=
+Encoding=ISO-8859-15
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
 [item:babelbst.tex]
 open=false
 order=-1
@@ -64,12 +73,12 @@ open=false
 order=-1
 
 [item:tktltiki.cls]
-open=false
-order=-1
+open=true
+order=2
 
 [view-settings,view=0,item:engl_model.tex]
-CursorColumn=404
-CursorLine=37
+CursorColumn=114
+CursorLine=68
 JumpList=
 TextFolding=[]
 ViMarks=.,0,0,[,0,0,],0,0
@@ -82,8 +91,15 @@ TextFolding=[]
 ViMarks=.,0,0,[,0,0,],-1,-1
 
 [view-settings,view=0,item:references.bib]
-CursorColumn=57
-CursorLine=8
+CursorColumn=16
+CursorLine=4
+JumpList=
+TextFolding=[]
+ViMarks=.,0,0,[,0,0,],0,0
+
+[view-settings,view=0,item:tktltiki.cls]
+CursorColumn=0
+CursorLine=0
 JumpList=
 TextFolding=[]
 ViMarks=
