@@ -1,6 +1,9 @@
+from time import mktime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
-
+from sklearn.cluster import KMeans
+from sklearn import metrics
+import numpy as np
 import newsaggregator.rss_fetcher as rf
 
 
@@ -59,5 +62,22 @@ def get_all_news_entries():
     return rf.get_feeds_data_2(feeds)
 
 
-def get_is_trending(news_entries):
-    pass
+def get_news_categorical_labels(news_entries):
+    X = []
+    for (title, description, link, date, named_entities, news_id) in news_entries:
+        X.append(mktime(date.timetuple()))
+
+    X = np.asarray(X).reshape(-1, 1)
+
+    max_silhouette_coef = (-1, -1, None)
+    for n_clusters in range(2, 10):
+        km = KMeans(n_clusters)
+        km.fit(X)
+        silhouette_coef = metrics.silhouette_score(X, km.labels_, sample_size=1000)
+        # print((n_clusters, silhouette_coef))
+        if silhouette_coef > max_silhouette_coef[1]:
+            max_silhouette_coef = (n_clusters, silhouette_coef, km.labels_)
+
+    # print(max_silhouette_coef)
+
+    return list(max_silhouette_coef[-1])
