@@ -1,3 +1,5 @@
+from time import mktime
+import datetime
 import feedparser as fp  # parse feed data
 from nltk import WordNetLemmatizer
 from nltk.stem.snowball import SnowballStemmer  # stemming text data
@@ -33,11 +35,8 @@ def get_default_feeds():
     return get_feeds(sources)
 
 
-def streamline(line: str, stemmer, lemmer, stop_words, words):
-    html = BeautifulSoup(line, 'html5lib')
-    processed = html.get_text()
-    processed = unescape(processed)
-    processed = unidecode(processed)
+def streamline(line: str, stemmer, lemmer, stop_words):
+    processed = clean_text(line)
 
     named_entities = get_named_entities_from_text(processed)
     named_entities = process_keywords(named_entities, lemmer, stop_words)
@@ -47,6 +46,14 @@ def streamline(line: str, stemmer, lemmer, stop_words, words):
     processed = ' '.join(stemmer.stem(token) for token in tokens if
                          not any((c in punctuation) for c in token) and token not in stop_words)
     return named_entities, processed
+
+
+def clean_text(line):
+    html = BeautifulSoup(line, 'html5lib')
+    processed = html.get_text()
+    processed = unescape(processed)
+    processed = unidecode(processed)
+    return processed
 
 
 def process_keywords(keywords, lemmer=None, stop_words=None):
@@ -92,11 +99,11 @@ def get_feeds_data_2(feeds: list):
 
     for f in feeds:  # type: fp.FeedParserDict
         for e in f.entries:
-            title = e.title if e.get('title') else ''
-            description = e.description if e.get('description') else ''
+            title = clean_text(e.title) if e.get('title') else ''
+            description = clean_text(e.description) if e.get('description') else ''
             link = e.link if e.get('link') else 'https://google.com'
-            date = e.published_parsed if e.get('published_parsed') else None
-            named_entities, processed = streamline(title + '. ' + description, stemmer, lemmer, stop_words, stop_words)
+            date = datetime.datetime.fromtimestamp(mktime(e.published_parsed)) if e.get('published_parsed') else None
+            named_entities, processed = streamline(title + '. ' + description, stemmer, lemmer, stop_words)
             entry_id = hash(processed)
             f_data[entry_id] = (title, description, link, date, named_entities, processed)
 

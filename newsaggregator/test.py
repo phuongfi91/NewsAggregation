@@ -1,14 +1,88 @@
 # import json  # dumping exporting output
-from nltk import SnowballStemmer, WordNetLemmatizer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+import datetime
+import random
+from time import struct_time, mktime, strptime, strftime, localtime
+
+# from nltk import SnowballStemmer, WordNetLemmatizer
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.metrics.pairwise import linear_kernel
 
 import newsaggregator.news_finder as nf
 
 nf.get_all_news_entries()
-news_entry = nf.get_news_from_keywords(['Spain'])[0]
+news_entry = nf.get_news_from_keywords(['catalan'])[0]
 news_entry
 nf.get_related_news(news_entry)
+
+
+datetime.datetime.now()
+
+# struct_time(tm_year=2017, tm_mon=10, tm_mday=25, tm_hour=18, tm_min=39, tm_sec=0, tm_wday=2, tm_yday=298, tm_isdst=0)
+date = news_entry[3] # type: struct_time
+dt = datetime.datetime.fromtimestamp(mktime(date))
+dt
+date2 = datetime.datetime.now()
+date2-dt
+dt
+
+def strTimeProp(start, end, format, prop):
+    """Get a time at a proportion of a range of two formatted times.
+
+    start and end should be strings specifying times formated in the
+    given format (strftime-style), giving an interval [start, end].
+    prop specifies how a proportion of the interval to be taken after
+    start.  The returned time will be in the specified format.
+    """
+
+    stime = mktime(strptime(start, format))
+    etime = mktime(strptime(end, format))
+
+    ptime = stime + prop * (etime - stime)
+
+    # return strftime(format, localtime(ptime))
+    return localtime(ptime)
+
+
+def randomDate(start, end, prop):
+    return strTimeProp(start, end, '%m/%d/%Y %I:%M %p', prop)
+
+
+
+
+from sklearn.cluster import KMeans
+import numpy as np
+from sklearn import metrics
+# x = np.random.random(13876)
+# x = np.asarray([1,2,3,4,100,101,102,104,200,201,202,4000,4001,4002,4003])
+X = []
+for i in range(30):
+    X.append(mktime(randomDate("1/1/2008 1:30 AM", "1/3/2008 4:50 PM", random.random())))
+
+X = np.asarray(X)
+sorted(X)
+
+max_co = (-1, -1)
+for c in range(2, 10):
+    km = KMeans(c)
+    km.fit(X.reshape(-1,1))  # -1 will be calculated to be 13876 here
+    silhouette_coef = metrics.silhouette_score(X.reshape(-1,1), km.labels_, sample_size=1000)
+    print((c, silhouette_coef))
+    if silhouette_coef > max_co[1]:
+        max_co = (c, silhouette_coef)
+
+np.shape(km.labels_)
+np.shape(X)
+re = []
+for (l, x) in zip(km.labels_, X):
+    re.append((l, x))
+
+sorted(re)
+
+type(km.labels_)
+print(max_co)
+np.unique(km.labels_)
+
+
 
 # stemmer = SnowballStemmer('english')
 # lemmer = WordNetLemmatizer()

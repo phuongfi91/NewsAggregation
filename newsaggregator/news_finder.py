@@ -17,7 +17,7 @@ def get_news_from_keywords(keywords):
     return news_entries
 
 
-def get_related_news(news_entry, top_entries=5):
+def get_related_news(news_entry, top_entries=10):
     target_id = news_entry[-1]
     news_data = get_all_news_entries()
     target_index = -1
@@ -57,3 +57,7 @@ def get_related_news(news_entry, top_entries=5):
 def get_all_news_entries():
     feeds = rf.get_default_feeds()
     return rf.get_feeds_data_2(feeds)
+
+
+def get_is_trending(news_entries):
+    pass

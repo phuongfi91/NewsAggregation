@@ -6,7 +6,7 @@ import newsaggregator.rss_fetcher as rf
 import newsaggregator.named_entities as ne
 
 feeds = rf.get_default_feeds()
-news_data = rf.get_feeds_data(feeds)
+news_data = rf.get_feeds_data_2(feeds)
 news_data
 
 lines = []

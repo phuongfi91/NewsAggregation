@@ -18,9 +18,32 @@ from sklearn.cluster import KMeans, MiniBatchKMeans
 import logging
 from optparse import OptionParser
 import sys
-from time import time
+from time import time, strftime, localtime, strptime, mktime
 
 import numpy as np
+
+import random
+def strTimeProp(start, end, format, prop):
+    """Get a time at a proportion of a range of two formatted times.
+
+    start and end should be strings specifying times formated in the
+    given format (strftime-style), giving an interval [start, end].
+    prop specifies how a proportion of the interval to be taken after
+    start.  The returned time will be in the specified format.
+    """
+
+    stime = mktime(strptime(start, format))
+    etime = mktime(strptime(end, format))
+
+    ptime = stime + prop * (etime - stime)
+
+    return strftime(format, localtime(ptime))
+
+
+def randomDate(start, end, prop):
+    return strTimeProp(start, end, '%m/%d/%Y %I:%M %p', prop)
+
+print(randomDate("1/1/2008 1:30 PM", "1/1/2017 4:50 AM", random.random()))
 
 # Display progress logs on stdout
 logging.basicConfig(level=logging.INFO,
@@ -105,6 +128,7 @@ else:
                                  min_df=2, stop_words='english',
                                  use_idf=opts.use_idf)
 X = vectorizer.fit_transform(dataset.data)
+np.shape(X)
 
 print("done in %fs" % (time() - t0))
 print("n_samples: %d, n_features: %d" % X.shape)
