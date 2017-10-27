@@ -1,7 +1,7 @@
-from time import mktime
-import datetime
+from time import mktime  # parse news published date
+import datetime  # parse news published date
 import feedparser as fp  # parse feed data
-from nltk import WordNetLemmatizer
+from nltk import WordNetLemmatizer  # lemmatize keywords
 from nltk.stem.snowball import SnowballStemmer  # stemming text data
 from nltk.tokenize import word_tokenize  # tokenize text data
 from nltk.corpus import stopwords  # removing stop words
@@ -13,13 +13,20 @@ from newsaggregator.named_entities import get_named_entities_from_text  # extrac
 
 
 def get_feeds(sources: list):
+    """
+    Get RSS feed objects from a list of RSS URLs
+    :param sources:
+    :return:
+    """
     return [fp.parse(s) for s in sources]
 
 
 def get_default_feeds():
+    """
+    Get RSS feed objects from the default manually collected list of RSS URLs
+    :return:
+    """
     sources = [
-        # r'phuongs_prototype/bbc_rss.xml',
-        # r'phuongs_prototype/cnn_rss.xml',
         'http://feeds.bbci.co.uk/news/world/europe/rss.xml',
         'http://rss.cnn.com/rss/edition_europe.rss',
         'https://www.cnbc.com/id/19794221/device/rss/rss.html',
@@ -36,6 +43,14 @@ def get_default_feeds():
 
 
 def streamline(line: str, stemmer, lemmer, stop_words):
+    """
+    Streamline or process a string in order to get named entities and processable text
+    :param line:
+    :param stemmer:
+    :param lemmer:
+    :param stop_words:
+    :return:
+    """
     processed = clean_text(line)
 
     named_entities = get_named_entities_from_text(processed)
@@ -49,6 +64,11 @@ def streamline(line: str, stemmer, lemmer, stop_words):
 
 
 def clean_text(line):
+    """
+    Clean a string extracted from HTML source
+    :param line:
+    :return:
+    """
     html = BeautifulSoup(line, 'html5lib')
     processed = html.get_text()
     processed = unescape(processed)
@@ -57,6 +77,13 @@ def clean_text(line):
 
 
 def process_keywords(keywords, lemmer=None, stop_words=None):
+    """
+    Lemmatize keywords and potentially remove stop words
+    :param keywords:
+    :param lemmer:
+    :param stop_words:
+    :return:
+    """
     if lemmer == None:
         lemmer = WordNetLemmatizer()
     if stop_words == None:
@@ -70,26 +97,11 @@ def process_keywords(keywords, lemmer=None, stop_words=None):
 
 
 def get_feeds_data(feeds: list):
-    f_data = {}
-
-    # TODO: fix hardcoded language preference
-    stemmer = SnowballStemmer('english')
-    stop_words = stopwords.words('english')
-    lemmer = WordNetLemmatizer()
-
-    for f in feeds:  # type: fp.FeedParserDict
-        feed_title = f.feed.title  # type: str
-        feed_title = feed_title.lower()
-        feed_title = feed_title.replace(' ', '_')
-        entries = [
-            streamline(e.title + '. ' + e.description if e.get('description') else "", stemmer, lemmer, stop_words)
-            for e in f.entries]
-        f_data[feed_title] = entries
-
-    return f_data
-
-
-def get_feeds_data_2(feeds: list):
+    """
+    Return news data for selected feeds
+    :param feeds:
+    :return:
+    """
     f_data = {}
 
     # TODO: fix hardcoded language preference

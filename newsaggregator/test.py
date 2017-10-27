@@ -10,10 +10,12 @@ from time import struct_time, mktime, strptime, strftime, localtime
 import newsaggregator.news_finder as nf
 
 nf.get_all_news_entries()
-news_entry = nf.get_news_from_keywords(['catalan'])[0]
+len(nf.get_all_news_entries())
+news_entry = nf.get_news_from_keywords(['london'])[0]
 news_entry
 related_news = nf.get_related_news(news_entry)
 related_news
+nf.get_news_categorical_labels(related_news)
 
 datetime.datetime.now()
 
